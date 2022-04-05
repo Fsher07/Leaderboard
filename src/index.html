@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+</head>
+<body>
+  <h1>Leaderboard</h1>
+  <div class="container">
+    <div class="scorelistBoard">
+      <div class="scoreRefresh-title">
+        <h3>Recent Scores</h2>
+        <button id="refresh-btn">Refresh</button>
+      </div>
+      <ul class="scoreList">
+        <!-- list is going to be created dynamically -->
+       </ul>
+    </div>
+    <form class="form" action="index.php" method="post">
+      <label for="input">Add your score</label>
+      <input type="text" name="name" placeholder="Enter your name">
+      <input type="text" name="score" placeholder="Enter your score">
+      <button type="submit" name="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
