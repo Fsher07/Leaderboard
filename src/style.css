@@ -5,6 +5,25 @@
   padding: 0;
 }
 /*score board styles*/
+h1 {
+  margin-left: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 10px;
+}
+
 .scoreRefresh-title {
   display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 20px;
 }
