@@ -12,7 +12,7 @@
     <div class="scorelistBoard">
       <div class="scoreRefresh-title">
         <h3>Recent Scores</h2>
-        <button id="refresh-btn">Refresh</button>
+        <button type="submit" id="refresh-btn">Refresh</button>
       </div>
       <ul class="scoreList">
         <!-- list is going to be created dynamically -->
@@ -20,8 +20,8 @@
     </div>
     <div class="form">
       <label for="input">Add your score</label>
-      <input type="text" name="name" id="name" placeholder="Enter your name">
-      <input type="text" name="score" id="score" placeholder="Enter your score">
+      <input type="text" name="name" id="name" placeholder="Enter your name" required>
+      <input type="number" name="score" id="score" placeholder="Enter your score" required>
       <button type="submit" name="submit" id="submit">Submit</button>
     </div>
   </div>
