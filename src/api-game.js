@@ -26,5 +26,10 @@ async function addScoreItem (input) {
   return scoreItem.json();
 }
 
+async function getScoreItems () {
+  const scores = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores`);
+  return scores.json();
+}
+
 
 
