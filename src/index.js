@@ -6,14 +6,16 @@ const scoreValue = document.getElementById('score');
 const submitBtn = document.getElementById('submit');
 const refreshBtn = document.getElementById('refresh-btn');
 
-submitBtn.addEventListener('click', async () => { 
-  
+submitBtn.addEventListener('click', async (e) => { 
+
   if (scoreName.value !== '' && scoreValue.value !== '') {
-    const scoreBar = {
+    const scoreItem = await addScoreItem({
       user: scoreName.value,
       score: scoreValue.value
-    };
-    addScoreItem(scoreBar).then((response) => response.result);
+    });
+    } else {
+      const error = document.querySelector('.error');
+      error.classList.toggle('active');
     }
   }
 );
