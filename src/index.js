@@ -1,3 +1,6 @@
 import './style.css';
+import scoreBoard from './scoreList.js';
 
-console.log("hello");
+const submitBtn = document.getElementById('submit');
+
+submitBtn.addEventListener('click', scoreBoard.addScore);

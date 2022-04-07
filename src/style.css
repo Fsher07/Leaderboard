@@ -4,7 +4,38 @@
   margin: 0;
   padding: 0;
 }
-/*score board styles*/
+
+li {
+  list-style: none;
+  max-width: 40vw;
+  padding-left: 20px;
+}
+
+/* score board styles */
+h1 {
+  margin-left: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
 .scoreRefresh-title {
   display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.scoreListItem:nth-child(odd) {
+  background-color: #d3d3d3;
 }
