@@ -11,11 +11,11 @@ async function postGame() {
   return result.json();
 }
 
-createGame().then((response) => {
+postGame().then((response) => {
   [gameID] = response.result.match(/(?<=ID: )[^ ]+/);
 });
 
-async function addScoreItem (input) {
+export async function addScoreItem (input) {
   const scoreItem = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores`, {
     method: 'POST',
     headers: {
@@ -26,7 +26,7 @@ async function addScoreItem (input) {
   return scoreItem.json();
 }
 
-async function getScoreItems () {
+export async function getScoreItems () {
   const scores = await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameID}/scores`);
   return scores.json();
 }
