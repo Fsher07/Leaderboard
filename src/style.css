@@ -3,24 +3,34 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #4D4B56;
+  color: #C5856C;
 }
 
-li {
-  list-style: none;
-  max-width: 40vw;
-  padding-left: 20px;
+button {
+  cursor: pointer;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
 }
 
 /* score board styles */
 h1 {
   margin-left: 10px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-left: 10px;
+  gap: 5rem;
   margin-top: 20px;
+  padding-left: 20rem;
+  padding-right: 20rem;
 }
 
 .scoreRefresh-title {
@@ -36,8 +46,18 @@ h1 {
   padding-right: 20px;
 }
 
-.scoreListItem:nth-child(odd) {
-  background-color: #d3d3d3;
+input {
+  border: none;
+  border-bottom: 1px solid #C5856C;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.scoreListItem:nth-child(odd), td {
+  background-color: #8FC9BD;
+  color: #4D4B56;
 }
 
 .error {
@@ -49,4 +69,27 @@ h1 {
 
 .active {
   display: block;
+}
+
+#submit {
+  max-width: 5vw;
+  font-size: 10px;
+  background-color: #C5856C;
+  border: none;
+  padding: 10px;
+  box-shadow: 3px 3px 3px #8FC9BD;
+  color: #4D4B56;
+}
+
+#refresh-btn {
+  background-color: #C5856C;
+  border: none;
+  padding: 10px;
+  box-shadow: 3px 3px 3px #8FC9BD;
+  color: #4D4B56;
+}
+
+.scoreRefresh-title {
+  display: flex;
+  justify-content: space-between;
 }
