@@ -39,3 +39,14 @@ h1 {
 .scoreListItem:nth-child(odd) {
   background-color: #d3d3d3;
 }
+
+.error {
+  font-size: 10px;
+  margin-top: -15px;
+  color: red;
+  display: none;
+}
+
+.active {
+  display: block;
+}
