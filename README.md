@@ -1,27 +1,40 @@
 # Leaderboard
+
 ![ScreenShot](/images/Capture.JPG)
-> In this project, you can add scores with names to leaderboard.
+
+> In this project, you can submit scores with names to leaderboard and refresh to display them.
 
 ## Built With
 
 - CSS
 - JavaScript
 - HTML
-- npm
-- Webpack
+- API service
+- Webpack to bundle
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://fsher07.github.io/To-Do-List/)
+[Live Demo Link](https://fsher07.github.io/Leaderboard/)
 
-## Getting Started
+## How to Setup
 
-To get a local copy up and running follow these simple example steps.
+> You can simply clone or download [this repository](https://github.com/Fsher07/Leaderboard/tree/final-touches), and use your favorite browser or code editor to run this program.
 
--To run the project locally, clone the project using the commands and link below:
+-To run the project locally, clone the project, and follow the commands below in order:
 
--git clone https://github.com/Leaderboard.git
--npm start
+```
+npm install
+```
+
+```
+npm install webpack webpack-cli --save-dev
+```
+```
+npm run build
+```
+```
+npm start
+```
 ## Author
 
 👤 **Furkan Salim Hıdır**
@@ -34,7 +47,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Fsher07/Leaderboard/issues).
 
 ## Show your support
 
@@ -42,6 +55,3 @@ Give a ⭐️ if you like this project!
 
 ## Acknowlodgement
 Microverse
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.

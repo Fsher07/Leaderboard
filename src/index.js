@@ -12,6 +12,8 @@ submitBtn.addEventListener('click', async () => {
       user: scoreName.value,
       score: scoreValue.value,
     });
+    scoreName.value = '';
+    scoreValue.value = '';
   } else {
     const error = document.querySelector('.error');
     error.classList.toggle('active');
@@ -23,9 +25,10 @@ refreshBtn.addEventListener('click', async () => {
   scoreList.innerHTML = '';
   getScoreItems().then((response) => {
     response.result.forEach((score) => {
-      const scoreListItem = document.createElement('li');
+      const scoreListItem = document.createElement('tr');
       scoreListItem.className = 'scoreListItem';
-      scoreListItem.innerHTML = `${score.user} : ${score.score}`;
+      scoreListItem.innerHTML = `<td>${score.user}:</td>
+        <td> ${score.score}</td>`;
       scoreList.appendChild(scoreListItem);
     });
   });

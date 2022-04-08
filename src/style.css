@@ -1,32 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 /* core styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background-color: #4d4b56;
+  color: #c5856c;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
 }
 
-li {
-  list-style: none;
-  max-width: 40vw;
-  padding-left: 20px;
+button {
+  cursor: pointer;
 }
 
 /* score board styles */
 h1 {
   margin-left: 10px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 10px;
-  margin-top: 20px;
+  grid-template-columns: 55% 45%;
+  gap: 5rem;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .scoreRefresh-title {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
   margin-bottom: 20px;
+}
+
+.score-tag {
+  font-weight: bold;
 }
 
 .form {
@@ -36,8 +48,37 @@ h1 {
   padding-right: 20px;
 }
 
-.scoreListItem:nth-child(odd) {
-  background-color: #d3d3d3;
+input {
+  border: none;
+  border-bottom: 1px solid #c5856c;
+  font-size: 1rem;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.scoreListItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  padding: 2px 10px;
+}
+
+.scoreListItem:nth-child(odd),
+.scoreListItem:nth-child(odd) > td {
+  background-color: #8fc9bd;
+  color: #4d4b56;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.scorelistBoard {
+  padding: 3%;
+  border: 3px solid #c5856c;
 }
 
 .error {
@@ -49,4 +90,31 @@ h1 {
 
 .active {
   display: block;
+}
+
+#submit {
+  max-width: 10vw;
+  background-color: #c5856c;
+  border: none;
+  padding: 2%;
+  box-shadow: 3px 3px 3px #8fc9bd;
+  color: #4d4b56;
+}
+
+#submit:hover {
+  background-color: #8fc9bd;
+  box-shadow: 3px 3px 3px #c5856c;
+}
+
+#refresh-btn {
+  background-color: #c5856c;
+  border: none;
+  padding: 10px;
+  box-shadow: 3px 3px 3px #8fc9bd;
+  color: #4d4b56;
+}
+
+#refresh-btn:hover {
+  background-color: #8fc9bd;
+  box-shadow: 3px 3px 3px #c5856c;
 }
