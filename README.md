@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://fsher07.github.io/Leaderboard/)
+[Live Demo Link](https://fsher07.github.io/Leaderboard/dist)
 
 ## How to Setup
 
